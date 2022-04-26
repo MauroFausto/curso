@@ -114,6 +114,11 @@
             require_once "views/graficoPizza.php";
         }
 
-        
+        public function dados_grafico()
+        {
+            $cursoDAO = new cursoDAO();
+            $retorno = $cursoDAO->buscar_dados_grafico();
+            echo json_encode($retorno);            
+        }
     }
 ?>

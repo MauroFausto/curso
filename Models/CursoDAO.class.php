@@ -131,24 +131,6 @@
                 $this->conexao = null;
                 return "Problema ao buscar pelos dados para construir o gráfico.";
             }
-        }
-
-        public function dados_grafico()
-        {
-            $sql = "SELECT curso.nome, COUNT(aluno.idAluno) AS valor FROM aluno, curso, aluno_curso where aluno.idaluno = aluno_curso.idaluno and curso.idcurso = aluno_curso.idcurso group by curso.nome order by valor desc";
-
-            try
-            {
-                $stm = $this->conexao->prepare($sql);
-                $stm->execute();
-                $this->conexao = null;
-                return $stm->fetchAll(PDO::FETCH_OBJ);
-            }
-            catch(PDOException $e)
-            {
-                $this->conexao = null;
-                return "Problema ao buscar pelos dados para construir o gráfico.";
-            }
-        }
+        }        
     }
 ?>
