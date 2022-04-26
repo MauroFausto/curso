@@ -115,7 +115,7 @@
             }
         }
 
-        public function buscar_dados_grafico()
+        public function buscar_dados_graficos()
         {
             $sql = "SELECT curso.nome, COUNT(aluno.idAluno) AS valor FROM aluno, curso, aluno_curso where aluno.idaluno = aluno_curso.idaluno and curso.idcurso = aluno_curso.idcurso group by curso.nome order by valor desc";
 

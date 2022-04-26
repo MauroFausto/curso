@@ -106,19 +106,19 @@
 
         public function graficoBarras()
         {
-            require_once "views/graficoBarras.php";
+            require_once "views/graficoBarras.html";
         }
 
         public function graficoPizza()
         {
-            require_once "views/graficoPizza.php";
+            require_once "views/graficoPizza.html";
         }
 
         public function dados_grafico()
         {
             $cursoDAO = new cursoDAO();
-            $retorno = $cursoDAO->buscar_dados_grafico();
-            echo json_encode($retorno);            
+            $retorno = $cursoDAO->buscar_dados_graficos();
+            echo json_encode($retorno);
         }
     }
 ?>

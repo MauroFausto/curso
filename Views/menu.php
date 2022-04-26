@@ -9,6 +9,8 @@
        <body>
            <a href="index.php?controle=CursoController&metodo=listarCursos">Listar Cursos</a><br><br>
            <a href="index.php?controle=AlunoController&metodo=listarAlunos">Listar Alunos</a><br><br>
+           <a href="index.php?controle=CursoController&metodo=graficoBarras">Gráfico de Barras</a><br><br>
+           <a href="index.php?controle=CursoController&metodo=graficoPizza">Gráfico de Pizza</a><br><br>
        </body>
        <footer>
            <h1>
