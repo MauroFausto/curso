@@ -26,13 +26,13 @@
                 $.ajax({
                     type: "get",
                     url: "index.php",
-                    data: "controle=CursoController&metodo=buscar_dados_grafico",
+                    data: "controle=CursoController&metodo=dados_grafico",
                     dataType: "json",
                     success: function(dados){
                         // Criação do Gráfico
                     },
                     error: function(){
-                        alert("Falha catastrófica!")
+                        alert("Falha catastrófica!");
                     }
                 });
             });
